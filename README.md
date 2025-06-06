@@ -8,7 +8,7 @@ Esta aplicación web permite explorar, buscar y filtrar personajes de la serie R
 ## Repositorio GitHub
 
 El código fuente completo está disponible en:
-https://github.com/USUARIO/REPO (reemplaza con tu URL real)
+https://github.com/LucasNun3z/proyecto-rick-and-morty
 
 ## Demo en línea
 
