@@ -43,6 +43,31 @@ npm install
 npm run dev
 ```
 
+## 💡 Detalles técnicos
+
+### Reactividad
+- Uso de Composition API con `ref`, `computed` y `watch`
+- Two-way binding con `v-model`
+- Manejo eficiente de estado local y global
+
+### Rendimiento
+- Lazy loading de imágenes
+- Paginación eficiente
+- Debounce en búsquedas
+- Caché local para favoritos
+
+### API y Manejo de Datos
+- Servicios modularizados
+- Manejo de errores robusto
+- Transformación de datos
+- Sistema de caché
+
+### Diseño Responsivo
+- Mobile-first approach
+- Breakpoints personalizados
+- CSS Grid y Flexbox
+- Dark mode nativo
+
 ## 🧪 Testing
 
 Ejecutar los tests unitarios:
@@ -108,3 +133,9 @@ Las contribuciones son bienvenidas. Por favor, abre un issue primero para discut
 ## 📄 Licencia
 
 Este proyecto está bajo la Licencia MIT.
+
+## 👥 Integrantes del Grupo
+
+- Carlos Jara
+- Lucas Nuñez
+- Jesus Medina

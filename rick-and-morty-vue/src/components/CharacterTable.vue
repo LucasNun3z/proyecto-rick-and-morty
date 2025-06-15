@@ -375,6 +375,9 @@ function onCharacterClick(character) {
 
 function toggleFav(character) {
   emit('toggle-fav', character)
+  // No actualizamos directamente character.isFav aquí
+  // porque se actualizará a través del watcher cuando
+  // el componente padre actualice la prop favorites
 }
 
 function toggleView() {
@@ -401,10 +404,12 @@ watch([search, filterStatus, filterGender, filterSpecies], () => {
   fetchCharacters(1) // Volver a la primera página al cambiar los filtros
 })
 
-watch(props.favorites, (newFavs) => {
-  characters.value.forEach(c => {
-    c.isFav = newFavs.some(f => f.id === c.id)
-  })
+watch(() => props.favorites, (newFavs) => {
+  if (characters.value) {
+    characters.value.forEach(c => {
+      c.isFav = newFavs.some(f => f.id === c.id)
+    })
+  }
 }, { deep: true })
 
 // Lifecycle hooks
